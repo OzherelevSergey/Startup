@@ -565,60 +565,82 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="section-header">
-                    <h4 class="main-title">Get in touch</h4>
+    </main>
+    <div class="slider-dots">
+        <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+        <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+        <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+    </div>
+</div>
+</div>
+    <div class="form" id="clients">
+<div class="form-box">
+    <div class="form-title">
+        <p class="title-form">Latest Works</p>
+            <div class="form-line" ></div>
+        <p class="subtitle-form">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+    </div>
+    <div class="form-main">
+        <div class="form-adress">
+            <div class="adress-point">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="map-point">
+                    <p class="point-adres">Address</p>
+                    <p class="point-text">312, 7th Ave, New York
+                        NY 101200, United States of America
+                    </p>
                 </div>
-                <p class="main-description">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
-                </p>
-
-                <div class="contact__content">
-                    <div class="contact__info">
-                        <div class="contact__info-item">
-                            <img src="images/fa-map-marker.png" alt="marker">
-                            <h5 class="title-14">Address</h5>
-                            <div>312, 7th Ave, New York</div>
-                            <div>NY 101200, United States of America</div>
-                        </div>
-                        <div class="contact__info-item">
-                            <img src="images/fa-mobile-phone.png" alt="phone">
-                            <h5 class="title-14">hotline (24X7)</h5>
-                            <div><a href="tel:+650052300">+65 0052 300</a>, <a href="tel:+6588251210">+65 88251 210</a></div>
-                            <div><a href="tel:+8801723511340">+88 01723 511 340</a></div>
-                        </div>
-                        <div class="contact__info-item">
-                            <img src="images/fa-letter.png" alt="email">
-                            <h5 class="title-14">E-mail</h5>
-                            <div><a href="mailto:shapedtheme@gmail.com">shapedtheme@gmail.com</a></div>
-                            <div><a href="mailto:khalilkode@gmail.com">khalilkode@gmail.com</a></div>
-                        </div>
-                    </div>
-                    <form class="contact__form form">
-                        <div class="form__group">
-                            <input type="text" name="Name" placeholder="Your name">
-                            <input type="email" name="Email" placeholder="Your E-mail">
-                        </div>
-                        <div class="form__group">
-                            <input type="text" name="Subject" placeholder="Your subject">
-                            <input type="text" name="Company_name" placeholder="Company name">
-                        </div>
-                        <div class="form__row">
-                            <textarea name="Message" placeholder="Write your message"></textarea>
-                        </div>
-                        <div class="form__footer">
-                            <input type="submit" class="button-dark" value="Send message">
-                            <p>
-                                <span class="red">* </span>
-                                We’ll contact you as as possible. We don’t reply on Monday.
-                            </p>
-                        </div>
-                    </form>
+            </div> 
+            <div class="adress-line">
+                <i class="fas fa-mobile-alt"></i>
+                <div class="map-point">  
+                    <p class="point-adres">Hotline (24x7)</p>
+                    <p class="point-phone">+65 0052 300, +65 88251 210
+                        +88 01723 511 340
+                    </p>
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="adress-mail">
+                <i class="far fa-envelope"></i>
+                <div class="map-point">
+                    <p class="point-adres">E-mail</p>
+                    <p class="point-text">shapedtheme@gmail.com
+                        khalilkode@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        <form class="form-wraper" action="sandmail.php" method="POST">
+            <div class="block__input-1">
+                <input class="form-red form-mrg" type="text" name="you_name" placeholder="Your name">
+                <input class="form-red " type="text" name="you_mail" placeholder="Your E-mail">
+            </div>
+            <div class="block__input-2">
+                <input class="form-red form-mrg" type="text" name="you_sub" placeholder="Your subject">
+                <input class="form-red" type="text" name="comp_name" placeholder="Company name">
+            </div>
+                <textarea class="form-red" placeholder="Write your message" name="text_area" id="#" cols="30" rows="10"></textarea>
+            <div class="area-send">
+                <button type="submit" class="textarea-btn">Send message</button>
+                <p class="textarea-text"><span class="red-star">*</span> We'll contact you as as possible. We don’t reply on Monday.</p>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+    <footer id="contact">
+<div class="footer-box">
+    <div class="footer-svg">
+        <p><i class="fab fa-twitter"></i></p>
+        <p><i class="fab fa-twitter"></i></p>
+        <p><i class="fab fa-twitter"></i></p>
+        <p><i class="fab fa-twitter"></i></p>
+    </div>
+    <div class="footer-line"></div>
+    <p>© 2015 Startup, Designed by ShapedTheme</p>
+</div>
+</footer>
+
 </div>
 </body>
 </html>
